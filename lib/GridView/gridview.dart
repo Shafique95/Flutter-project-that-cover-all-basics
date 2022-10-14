@@ -23,6 +23,7 @@ import '../flutter_rest_api_with_springboot/get_data_view.dart';
 import '../fluttertable/flutter_bale.dart';
 import '../gridviewWithBuilder/gridViewWithBuilder.dart';
 import '../layout_builder/layoutBuilder.dart';
+import '../streamExample/streamDemo.dart';
 import '../test_widget_for_Using.dart';
 import '../using_flutter_stack/stack_learning.dart';
 
@@ -315,7 +316,7 @@ class GridViewLearn extends StatelessWidget {
                   ),
                 );
               },
-              child: Text("CreateTextFieldByInputFixednumber"),
+              child: const Text("CreateTextFieldByInputFixednumber"),
             ),
             ElevatedButton(
               onPressed: () {
@@ -327,6 +328,17 @@ class GridViewLearn extends StatelessWidget {
                 );
               },
               child: Text("CalculateSumOfAutogenerateTextFieldByGetX"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => const StreamDemo(),
+                  ),
+                );
+              },
+              child: const Text("StreamDemo"),
             ),
           ],
         ),
