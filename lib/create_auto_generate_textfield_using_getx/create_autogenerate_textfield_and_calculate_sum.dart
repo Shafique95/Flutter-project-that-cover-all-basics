@@ -119,6 +119,7 @@ class _CalculateSumOfAutogenerateTextFieldByGetXState
               ElevatedButton(
                 onPressed: () {
                   sumController.calculateSum();
+                  sumController.validateField();
                   print("pressing");
                 },
                 child: Text("Calculate total"),
